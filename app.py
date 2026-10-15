@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify, send_from_directory
 from urllib.parse import urlparse
 from datetime import datetime, timezone
 import socket, ssl, ipaddress, re
+import os
 
 app = Flask(__name__)
 DASHBOARD = "certwatch_interactive_dashboard.html"
